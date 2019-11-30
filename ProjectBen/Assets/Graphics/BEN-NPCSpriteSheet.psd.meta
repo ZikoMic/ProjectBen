@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: ade661d9bf08093449b804054ae0c7d0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BEN-NPCSpriteSheet_0
+    21300002: BEN-NPCSpriteSheet_1
+    21300004: BEN-NPCSpriteSheet_2
+    21300006: BEN-NPCSpriteSheet_3
+    21300008: BEN-NPCSpriteSheet_4
+    21300010: BEN-NPCSpriteSheet_5
+    21300012: BEN-NPCSpriteSheet_6
+    21300014: BEN-NPCSpriteSheet_7
+    21300016: BEN-NPCSpriteSheet_8
+    21300018: BEN-NPCSpriteSheet_9
+    21300020: BEN-NPCSpriteSheet_10
+    21300022: BEN-NPCSpriteSheet_11
+    21300024: BEN-NPCSpriteSheet_12
+    21300026: BEN-NPCSpriteSheet_13
+    21300028: BEN-NPCSpriteSheet_14
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 143
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5049084, y: 0.6395095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6602a3cdbcb149aeeb55eb3a0d609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 143
+        width: 6
+        height: 19
+      alignment: 9
+      pivot: {x: 1.0552521, y: 1.0738478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0bc13e6a5ab8f418233fd523f9bc6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 143
+        width: 6
+        height: 19
+      alignment: 9
+      pivot: {x: 0.24761327, y: 0.99414706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ba5b126b9fa94488e8dfbedd53c5ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 145
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9405296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650c49931839c7741a5e0c5e6207198e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 145
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.55506617, y: 0.99559575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d389c5c91b1bd58468ba47fbb6228d54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 102
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb5416898a75884685ecda8ba3b8c9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 94
+        width: 38
+        height: 29
+      alignment: 9
+      pivot: {x: 0.4999999, y: 0.07181233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8596754500695d43872b22f374f3b4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 94
+        width: 23
+        height: 28
+      alignment: 9
+      pivot: {x: 0.53950435, y: 0.17550223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818abe57ac7fbbd47b56d9260b4c87c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 91
+        width: 37
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6473393, y: 0.002436774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0450968c85bad6543841b47a03946816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 94
+        width: 17
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5534462, y: 0.13944681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f1da63a59a2054191ac71d4263ade7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 99
+        width: 7
+        height: 14
+      alignment: 9
+      pivot: {x: 0.84612817, y: 0.9110298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482a4feb259124c4c8f1381e4b90311d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 57
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144eec5d5f78e2a4db7a7f32c9b28ae2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 18
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b62f0fa48569643808f50ba9a0e05e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 18
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e743464774163849987a0f22a8c7cbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-NPCSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 143
+        width: 12
+        height: 18
+      alignment: 9
+      pivot: {x: 0.47545657, y: 0.67016685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef36d6c7815f44e4a8727b3c6a068535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 91a8c5f522d64824b9b93b74dcdcd468
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
