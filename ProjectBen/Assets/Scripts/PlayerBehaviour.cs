@@ -52,37 +52,36 @@ public class PlayerBehaviour : MonoBehaviour
     }
 
     private void Update()
-    {
-
-        if (onLadder && Input.GetKey(KeyCode.W))
         {
-            rb.gravityScale = 0f;
-            rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
-        }
+            if (onLadder && Input.GetKey(KeyCode.W))
+            {
+                rb.gravityScale = 0f;
+                rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
+            }
 
-        if (!onLadder)
-        {
-            rb.gravityScale = defaultGravity;
-        }
-
-        
-
-
-
-        if (Input.GetKeyUp(KeyCode.P)){
-            PlayerPrefs.SetString("CurrentPlayer", "Female");
-        }else if (Input.GetKeyUp(KeyCode.O)){
-            PlayerPrefs.SetString("CurrentPlayer", "Male");
-        }
-
-        CameraFollow script = FindObjectOfType<Camera>().GetComponent<CameraFollow>();
-        script.updateScreen();
-        alreadySet = true;
+            if (!onLadder)
+            {
+                rb.gravityScale = defaultGravity;
+            }
 
 
-        if (dead && !isInvincible)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (Input.GetKeyUp(KeyCode.P))
+            {
+                PlayerPrefs.SetString("CurrentPlayer", "Female");
+            }
+            else if (Input.GetKeyUp(KeyCode.O))
+            {
+                PlayerPrefs.SetString("CurrentPlayer", "Male");
+            }
+
+            CameraFollow script = FindObjectOfType<Camera>().GetComponent<CameraFollow>();
+            script.updateScreen();
+            alreadySet = true;
+
+
+            if (dead && !isInvincible)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
-}
