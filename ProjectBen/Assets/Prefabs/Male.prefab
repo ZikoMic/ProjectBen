@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 2302921734249402961}
   - component: {fileID: 2302921734249402965}
   - component: {fileID: 2302921734249402964}
-  - component: {fileID: 3904291939564710592}
   - component: {fileID: 2302921734249402960}
   - component: {fileID: 2302921734249402974}
   - component: {fileID: 2302921734249402962}
@@ -157,22 +156,6 @@ MonoBehaviour:
   controller: {fileID: 2302921734249402960}
   anim: {fileID: 2302921734249402965}
   runSpeed: 50
---- !u!114 &3904291939564710592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2302921734249402967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a24e01c389dd044b9a26eab3f6b5299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentInterObj: {fileID: 0}
-  currentInterObjScript: {fileID: 0}
-  keys: 0
-  requiredKeys: 1
 --- !u!114 &2302921734249402960
 MonoBehaviour:
   m_ObjectHideFlags: 0

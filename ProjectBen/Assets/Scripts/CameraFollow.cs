@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -19,26 +17,8 @@ public class CameraFollow : MonoBehaviour
     {
     }
 
-//    private void DestroyedPlayer()
-//    {
-//        if (player == null)
-//        {
-//            if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
-//            {
-//                PlayerPrefs.SetString("CurrentPlayer", "Female");
-//                updateScreen();
-//
-//            }else if(PlayerPrefs.GetString("CurrentPlayer") == "Female")
-//            {
-//                PlayerPrefs.SetString("CurrentPlayer", "Male");
-//                updateScreen();
-//            }
-//            
-//        }
-//    }
-
     public void updateScreen()
-    {    
+    {
 
         if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
         {

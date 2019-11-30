@@ -18,6 +18,7 @@ public class LadderZone : MonoBehaviour
     {
         if (collider.CompareTag("Female") || collider.CompareTag("Male"))
         {
+            Debug.Log("On Ladder Player");
             player.onLadder = true;
         }
     }

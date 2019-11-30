@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InteractionObject : MonoBehaviour
 {
     public bool locked;
@@ -10,9 +11,10 @@ public class InteractionObject : MonoBehaviour
 
     public void DoInteraction()
     {
-         gameObject.SetActive(false);  
+        gameObject.SetActive(false);  
     }
 
 
 
 }
+
