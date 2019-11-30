@@ -10,14 +10,11 @@ public class PlayerBehaviour : MonoBehaviour
     public float climbSpeed = 10f;
     private Rigidbody2D rb;
     private bool dead = false;
-<<<<<<< Updated upstream
     private float distance;
     
     public bool onLadder;
     private float defaultGravity;
-=======
     public static bool alreadySet = false;
->>>>>>> Stashed changes
 
     private void Start()
     {
@@ -28,12 +25,9 @@ public class PlayerBehaviour : MonoBehaviour
         }
         Debug.Log("S");
         rb = GetComponent<Rigidbody2D>();
-<<<<<<< Updated upstream
         defaultGravity = rb.gravityScale;
-=======
         if(alreadySet)
             alreadySet = false;
->>>>>>> Stashed changes
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -48,7 +42,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
-<<<<<<< Updated upstream
         if (onLadder && Input.GetKey(KeyCode.W))
         {
             rb.gravityScale = 0f;
@@ -59,7 +52,6 @@ public class PlayerBehaviour : MonoBehaviour
         {
             rb.gravityScale = defaultGravity;
         }
-=======
 
         if (Input.GetKeyUp(KeyCode.P)){
             if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
@@ -78,7 +70,6 @@ public class PlayerBehaviour : MonoBehaviour
             script.updateScreen();
             alreadySet = true;
 
->>>>>>> Stashed changes
         
         if (dead)
         {
