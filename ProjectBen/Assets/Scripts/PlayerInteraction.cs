@@ -16,6 +16,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             keys = currentInterObjScript.requiredKeys;
             currentInterObjScript.locked = false;
+            Destroy(GameObject.FindGameObjectWithTag("Lock"));
         }
     }
 
