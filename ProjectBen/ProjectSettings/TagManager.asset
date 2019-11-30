@@ -12,6 +12,8 @@ TagManager:
   - Female
   - Robot
   - Briefcase
+  - Key
+  - Elevator
   layers:
   - Default
   - TransparentFX

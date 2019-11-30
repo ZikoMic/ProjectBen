@@ -24,8 +24,8 @@ public class Abilities : MonoBehaviour
         currentPlayer = PlayerPrefs.GetString("CurrentPlayer");
         rb = GameObject.FindGameObjectWithTag(currentPlayer).GetComponent<Rigidbody2D>();
 
-        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
-        {
+      //  if (PlayerPrefs.GetInt("Damage Resistance") == 2)
+       // {
             if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1) || isShrink)
@@ -38,7 +38,7 @@ public class Abilities : MonoBehaviour
             {
                 shrinkTimeLeft = 3.0f;
             }
-        }
+     //   }
 
        
             if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
