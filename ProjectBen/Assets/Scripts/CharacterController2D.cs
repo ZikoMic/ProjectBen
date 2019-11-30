@@ -131,7 +131,6 @@ public class CharacterController2D : MonoBehaviour
 		// If the player should jump...
 		if (jump && m_Grounded)
 		{
-			Debug.Log("is Jumping" + m_Grounded);
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
