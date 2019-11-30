@@ -467,13 +467,12 @@ GameObject:
   - component: {fileID: 4640569156114170707}
   - component: {fileID: 2400362983159383934}
   - component: {fileID: 526597477230571870}
-  - component: {fileID: 8972707035560463584}
   - component: {fileID: 7927464729156268651}
   - component: {fileID: 1901203030722260962}
   - component: {fileID: 8005958383105252033}
   - component: {fileID: 7327333818560486392}
   - component: {fileID: 114073513504823612}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AnimatedFemale 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -550,22 +549,6 @@ MonoBehaviour:
   controller: {fileID: 7927464729156268651}
   anim: {fileID: 7327333818560486392}
   runSpeed: 50
---- !u!114 &8972707035560463584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8582769218270806641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b776e2887af81841b5fb7f319d43068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shrinkTimeLeft: 3
-  shrinkSpellCooldown: 3
-  invincibleTimeLeft: 3
-  invincibleSpellCooldown: 3
 --- !u!114 &7927464729156268651
 MonoBehaviour:
   m_ObjectHideFlags: 0

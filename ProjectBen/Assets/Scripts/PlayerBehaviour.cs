@@ -16,7 +16,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float distance;
 
     Animator anim;
-    public bool onLadder;
+    public bool onLadder = false;
     private float defaultGravity;
     public static bool alreadySet = false;
     public bool isInvincible = false;

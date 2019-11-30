@@ -18,6 +18,7 @@ public class LadderZone : MonoBehaviour
     {
         if (collider.name == "Player")
         {
+            Debug.Log("On Ladder Player");
             player.onLadder = true;
         }
     }

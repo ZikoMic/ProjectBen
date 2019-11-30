@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,28 +13,23 @@ public class Abilities : MonoBehaviour
     [SerializeField] private float invincibleTimeLeft = 1f;
     private float invincibleSpellStart = 0f;
     [SerializeField] private float invincibleSpellCooldown = 3f;
+    private String currentPlayer;
     private bool isShrink = false;
     private bool isInvincible = false;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        player = FindObjectOfType<PlayerBehaviour>();
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
-        {
+        player = FindObjectOfType<PlayerBehaviour>();
+        currentPlayer = PlayerPrefs.GetString("CurrentPlayer");
+        rb = GameObject.FindGameObjectWithTag(currentPlayer).GetComponent<Rigidbody2D>();
+//        
+//        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
+//        {
             if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1) || isShrink)
                 {
-                    isShrink = true;
-                    rb.transform.localScale = Vector3.one;
                     Shrink();
                 }
             }
@@ -42,7 +38,7 @@ public class Abilities : MonoBehaviour
             {
                 shrinkTimeLeft = 3.0f;
             }
-        }
+//        }
 
 //        if (PlayerPrefs.GetInt("Increase Speed") == 2)
 //        {
@@ -80,11 +76,15 @@ public class Abilities : MonoBehaviour
 
     private void Shrink()
     {
-        if (shrinkTimeLeft < 0 && rb.transform.localScale == Vector3.one)
+        rb.transform.localScale = new Vector3(1f,1f, 1f);
+        isShrink = true;
+        
+        if ((shrinkTimeLeft < 0) && (rb.transform.localScale == new Vector3(1f, 1f, 1f)))
         {
-            shrinkSpellStart = Time.time;
+            Debug.Log("Size Up");
             isShrink = false;
-            rb.transform.localScale = new Vector3(3f, 3f, 0f);
+            shrinkSpellStart = Time.time;
+            rb.transform.localScale = new Vector3(3f, 3f, 1f);
         }
         else if (shrinkTimeLeft > 0)
         {
