@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 using System.Linq;
-
+using UnityEngine.SceneManagement;
 public class PlayerBehaviour : MonoBehaviour
 {
     public float climbSpeed = 10f;
@@ -15,6 +15,8 @@ public class PlayerBehaviour : MonoBehaviour
     public bool onLadder;
     private float defaultGravity;
     public static bool alreadySet = false;
+
+    
 
     private void Start()
     {
@@ -73,7 +75,8 @@ public class PlayerBehaviour : MonoBehaviour
         
         if (dead)
         {
-            Destroy(GameObject.FindWithTag("Player"));
+            //Destroy(GameObject.FindWithTag("Player"));
+           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
