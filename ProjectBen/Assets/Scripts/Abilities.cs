@@ -40,8 +40,7 @@ public class Abilities : MonoBehaviour
             }
         }
 
-        if (PlayerPrefs.GetInt("Increase Speed") == 2)
-        {
+       
             if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
             {
                 if (Input.GetKeyDown(KeyCode.Alpha2) || isInvincible)
@@ -55,7 +54,6 @@ public class Abilities : MonoBehaviour
             {
                 invincibleTimeLeft = 3.0f;
             }
-        }
     }
 
     private void Invincible()
