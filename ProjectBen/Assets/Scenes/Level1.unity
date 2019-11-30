@@ -261,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 7941640427449180595, guid: 3312de7ff3da9c84ebb91c2ebeb9d7fe,
         type: 3}
       propertyPath: shrinkTimeLeft
-      value: 500
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3312de7ff3da9c84ebb91c2ebeb9d7fe, type: 3}
@@ -1056,13 +1056,10 @@ PrefabInstance:
       propertyPath: MoveAxes.y
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 7479982343506628316, guid: cb4429b13a112eb49b7dea98f37ffc6b,
         type: 3}
       propertyPath: Distance
       value: 11
       objectReference: {fileID: 0}
-=======
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb4429b13a112eb49b7dea98f37ffc6b, type: 3}

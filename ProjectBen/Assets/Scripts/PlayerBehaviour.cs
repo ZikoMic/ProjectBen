@@ -5,17 +5,19 @@ using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 using System.Linq;
 using UnityEngine.SceneManagement;
+
 public class PlayerBehaviour : MonoBehaviour
 {
     public float climbSpeed = 10f;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private bool dead = false;
     private float distance;
     private float defaultGravity;
     public static bool alreadySet = false;
     public bool onLadder;
+    public bool isInvincible = false;
 
-    
 
     private void Start()
     {
@@ -24,8 +26,8 @@ public class PlayerBehaviour : MonoBehaviour
             PlayerPrefs.SetString("CurrentPlayer", "Male");
         }
 
-        Debug.Log("S");
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         defaultGravity = rb.gravityScale;
         if (alreadySet)
             alreadySet = false;
@@ -33,16 +35,20 @@ public class PlayerBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        string[] deathObjects = {"Spikes", "DeathBox"};
-
-        if (deathObjects.Contains(collider.gameObject.tag))
+        if (!isInvincible)
         {
-            dead = true;
-        }
+            string[] deathObjects = {"Spikes", "DeathBox"};
+
+            if (deathObjects.Contains(collider.gameObject.tag))
+            {
+                dead = true;
+            }
+        }    
     }
 
     private void Update()
     {
+
         if (onLadder && Input.GetKey(KeyCode.W))
         {
             rb.gravityScale = 0f;
@@ -73,11 +79,10 @@ public class PlayerBehaviour : MonoBehaviour
         script.updateScreen();
         alreadySet = true;
 
-        
-        if (dead)
+
+        if (dead && !isInvincible)
         {
-            //Destroy(GameObject.FindWithTag("Player"));
-           SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
