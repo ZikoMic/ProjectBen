@@ -16,7 +16,7 @@ public class LadderZone : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.name == "Player")
+        if (collider.CompareTag("Female") || collider.CompareTag("Male"))
         {
             Debug.Log("On Ladder Player");
             player.onLadder = true;
@@ -25,7 +25,7 @@ public class LadderZone : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.name == "Player")
+        if (collider.CompareTag("Female") || collider.CompareTag("Male"))
         {
             player.onLadder = false;
         }

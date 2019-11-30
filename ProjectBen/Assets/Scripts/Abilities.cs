@@ -23,9 +23,9 @@ public class Abilities : MonoBehaviour
         player = FindObjectOfType<PlayerBehaviour>();
         currentPlayer = PlayerPrefs.GetString("CurrentPlayer");
         rb = GameObject.FindGameObjectWithTag(currentPlayer).GetComponent<Rigidbody2D>();
-//        
-//        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
-//        {
+
+        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
+        {
             if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1) || isShrink)
@@ -38,25 +38,24 @@ public class Abilities : MonoBehaviour
             {
                 shrinkTimeLeft = 3.0f;
             }
-//        }
+        }
 
-//        if (PlayerPrefs.GetInt("Increase Speed") == 2)
-//        {
-        if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
+        if (PlayerPrefs.GetInt("Increase Speed") == 2)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha2) || isInvincible)
+            if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
             {
-                isInvincible = true;
-                Invincible();
+                if (Input.GetKeyDown(KeyCode.Alpha2) || isInvincible)
+                {
+                    isInvincible = true;
+                    Invincible();
+                }
+            }
+
+            if (!isInvincible)
+            {
+                invincibleTimeLeft = 3.0f;
             }
         }
-
-        if (!isInvincible)
-        {
-            invincibleTimeLeft = 3.0f;
-        }
-
-//        }
     }
 
     private void Invincible()
@@ -76,12 +75,11 @@ public class Abilities : MonoBehaviour
 
     private void Shrink()
     {
-        rb.transform.localScale = new Vector3(1f,1f, 1f);
+        rb.transform.localScale = new Vector3(1f, 1f, 1f);
         isShrink = true;
-        
+
         if ((shrinkTimeLeft < 0) && (rb.transform.localScale == new Vector3(1f, 1f, 1f)))
         {
-            Debug.Log("Size Up");
             isShrink = false;
             shrinkSpellStart = Time.time;
             rb.transform.localScale = new Vector3(3f, 3f, 1f);
