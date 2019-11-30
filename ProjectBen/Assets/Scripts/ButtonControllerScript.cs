@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonControllerScript : MonoBehaviour
@@ -31,6 +32,11 @@ public class ButtonControllerScript : MonoBehaviour
 
             }
         }
+    }
+
+    public void GoToScene()
+    {
+        SceneManager.LoadScene("Level1");
     }
 
     private void FixedUpdate()

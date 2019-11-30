@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SkillTree.unity
+    guid: a18a6aa89c2c56645a30bd2f785084e7
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: fe768d5aa07a93b4ca34df8741eb0d66
   m_configObjects: {}

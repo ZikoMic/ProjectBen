@@ -11,10 +11,9 @@ public class PlayerBehaviour : MonoBehaviour
     private Rigidbody2D rb;
     private bool dead = false;
     private float distance;
-    
-    public bool onLadder;
     private float defaultGravity;
     public static bool alreadySet = false;
+    public bool onLadder;
 
     
 
@@ -23,12 +22,12 @@ public class PlayerBehaviour : MonoBehaviour
         if (!PlayerPrefs.HasKey("CurrentPlayer"))
         {
             PlayerPrefs.SetString("CurrentPlayer", "Male");
-
         }
+
         Debug.Log("S");
         rb = GetComponent<Rigidbody2D>();
         defaultGravity = rb.gravityScale;
-        if(alreadySet)
+        if (alreadySet)
             alreadySet = false;
     }
 
@@ -49,28 +48,30 @@ public class PlayerBehaviour : MonoBehaviour
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, climbSpeed);
         }
-        
+
         if (!onLadder)
         {
             rb.gravityScale = defaultGravity;
         }
 
-        if (Input.GetKeyUp(KeyCode.P)){
+        if (Input.GetKeyUp(KeyCode.P))
+        {
             if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
             {
                 PlayerPrefs.SetString("CurrentPlayer", "Female");
             }
-        }else if (Input.GetKeyUp(KeyCode.O)){
+        }
+        else if (Input.GetKeyUp(KeyCode.O))
+        {
             if (PlayerPrefs.GetString("CurrentPlayer") == "Female")
             {
                 PlayerPrefs.SetString("CurrentPlayer", "Male");
-
             }
         }
 
-            CameraFollow script = FindObjectOfType<Camera>().GetComponent<CameraFollow>();
-            script.updateScreen();
-            alreadySet = true;
+        CameraFollow script = FindObjectOfType<Camera>().GetComponent<CameraFollow>();
+        script.updateScreen();
+        alreadySet = true;
 
         
         if (dead)
