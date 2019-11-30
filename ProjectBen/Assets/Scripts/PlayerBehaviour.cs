@@ -41,7 +41,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isInvincible)
         {
-            string[] deathObjects = { "Spikes", "DeathBox" };
+            string[] deathObjects = { "Spikes", "DeathBox", "Robot" ,"Briefcase"};
 
             if (deathObjects.Contains(collider.gameObject.tag))
             {
