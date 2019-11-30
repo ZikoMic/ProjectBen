@@ -53,7 +53,10 @@ public class CharacterController2D : MonoBehaviour
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
 		for (int i = 0; i < colliders.Length; i++)
 		{
-			if (colliders[i].gameObject != gameObject)
+
+
+            bool hasCollidedNotSelf = colliders[i].gameObject != gameObject;
+            if (hasCollidedNotSelf)
 			{	
 				m_Grounded = true;
 				if (!wasGrounded)
@@ -128,7 +131,7 @@ public class CharacterController2D : MonoBehaviour
 		// If the player should jump...
 		if (jump && m_Grounded)
 		{
-			Debug.Log("is Jumping");
+			Debug.Log("is Jumping" + m_Grounded);
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));

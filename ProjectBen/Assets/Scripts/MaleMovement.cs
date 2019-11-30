@@ -5,28 +5,64 @@ using UnityEngine;
 public class MaleMovement : MonoBehaviour
 {
     public CharacterController2D controller;
+    public Animator anim;
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
-	
+
+
+    private void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update () {
-        
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (Input.GetButtonDown("Jump"))
+        if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
         {
-            jump = true;
-        }
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        } else if (Input.GetButtonUp("Crouch"))
-        {
-            crouch = false;
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+            }
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+            }
+            else if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+            }
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+            }
+            else if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
+
+            if (Input.GetAxis("Horizontal") != 0)
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else if (Input.GetAxis("Horizontal") == 0)
+            {
+                anim.SetBool("isRunning", false);
+
+            }
         }
 
     }

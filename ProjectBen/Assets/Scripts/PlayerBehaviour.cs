@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Experimental.PlayerLoop;
 using System.Linq;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,9 @@ public class PlayerBehaviour : MonoBehaviour
     private Rigidbody2D rb;
     private bool dead = false;
     private float distance;
+
+    Animator anim;
+    public bool onLadder;
     private float defaultGravity;
     public static bool alreadySet = false;
     public bool onLadder;
@@ -19,6 +23,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Start()
     {
+        anim = gameObject.GetComponent<Animator>();
         if (!PlayerPrefs.HasKey("CurrentPlayer"))
         {
             PlayerPrefs.SetString("CurrentPlayer", "Male");
@@ -37,6 +42,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (deathObjects.Contains(collider.gameObject.tag))
         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             dead = true;
         }
     }
@@ -54,19 +60,14 @@ public class PlayerBehaviour : MonoBehaviour
             rb.gravityScale = defaultGravity;
         }
 
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            if (PlayerPrefs.GetString("CurrentPlayer") == "Male")
-            {
-                PlayerPrefs.SetString("CurrentPlayer", "Female");
-            }
-        }
-        else if (Input.GetKeyUp(KeyCode.O))
-        {
-            if (PlayerPrefs.GetString("CurrentPlayer") == "Female")
-            {
-                PlayerPrefs.SetString("CurrentPlayer", "Male");
-            }
+        
+
+
+
+        if (Input.GetKeyUp(KeyCode.P)){
+            PlayerPrefs.SetString("CurrentPlayer", "Female");
+        }else if (Input.GetKeyUp(KeyCode.O)){
+            PlayerPrefs.SetString("CurrentPlayer", "Male");
         }
 
         CameraFollow script = FindObjectOfType<Camera>().GetComponent<CameraFollow>();

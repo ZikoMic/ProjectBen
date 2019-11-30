@@ -1,0 +1,404 @@
+fileFormatVersion: 2
+guid: 348b852b9db59b449bd762dddd4d1d59
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BEN-FemaleSpriteSheet_0
+    21300002: BEN-FemaleSpriteSheet_1
+    21300004: BEN-FemaleSpriteSheet_2
+    21300006: BEN-FemaleSpriteSheet_3
+    21300008: BEN-FemaleSpriteSheet_4
+    21300010: BEN-FemaleSpriteSheet_5
+    21300012: BEN-FemaleSpriteSheet_6
+    21300014: BEN-FemaleSpriteSheet_7
+    21300016: BEN-FemaleSpriteSheet_8
+    21300018: BEN-FemaleSpriteSheet_9
+    21300020: BEN-FemaleSpriteSheet_10
+    21300022: BEN-FemaleSpriteSheet_11
+    21300024: BEN-FemaleSpriteSheet_12
+    21300026: BEN-FemaleSpriteSheet_13
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 157
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.46542105, y: 0.7293155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2093a361950ada043a0f1cfc1865341c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 158
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5377232, y: 0.98410964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf30c4927f6ccb41845c751350e76f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 158
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.51886195, y: 0.96681976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0143c47f1328ba741b1bd7b4ab71f40b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 152
+        width: 14
+        height: 21
+      alignment: 9
+      pivot: {x: 0.53239083, y: 0.23123242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4effce4d57a2b049880c4521b98a194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 132
+        width: 5
+        height: 19
+      alignment: 9
+      pivot: {x: 0.96220815, y: 0.8953102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8272e09a6a2c16945b0d424c471f7aa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 131
+        width: 5
+        height: 20
+      alignment: 9
+      pivot: {x: 0.063466646, y: 0.8883835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea68b3b037a084a478f6c943d1244fef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 135
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.9134072, y: 0.7583809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54849cc91ca995a45b1393eb5e185256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 135
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.8674732, y: 0.8445079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e552d44f373c6a498c0d128ca47e500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 80
+        width: 41
+        height: 38
+      alignment: 9
+      pivot: {x: 0.51194626, y: 0.037636608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e820758505a41544800ef058f60b5db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 80
+        width: 34
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5729543, y: 0.02675729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e8b0731333eef448c684eaa6cc79f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 12
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd1a6fd11c4add4eafaca70162cc22a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 12
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f746e444e7a53346895c3d5682532df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 157
+        width: 13
+        height: 19
+      alignment: 9
+      pivot: {x: 0.627677, y: 0.7183958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f014486572fb45240b7497e3fdda78af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEN-FemaleSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 115
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5047108, y: 0.11838393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24ac38b7842a264c8cd78608a06fa72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 144beff7e151a2b4f8f87b8b62ad71e8
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
