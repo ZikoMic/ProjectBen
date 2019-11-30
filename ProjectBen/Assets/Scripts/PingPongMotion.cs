@@ -11,7 +11,7 @@ public class PingPongMotion : MonoBehaviour
 
     public Vector3 MoveAxes = Vector2.zero;
 
-    public float Distance = 3f;
+    public float Distance = 11f;
     public float speed = 6f;
 
     private void Awake()
