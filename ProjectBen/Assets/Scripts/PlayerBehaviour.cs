@@ -19,7 +19,6 @@ public class PlayerBehaviour : MonoBehaviour
     public bool onLadder;
     private float defaultGravity;
     public static bool alreadySet = false;
-    public bool onLadder;
     public bool isInvincible = false;
 
 
@@ -42,12 +41,13 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isInvincible)
         {
-            string[] deathObjects = {"Spikes", "DeathBox"};
+            string[] deathObjects = { "Spikes", "DeathBox" };
 
-        if (deathObjects.Contains(collider.gameObject.tag))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            dead = true;
+            if (deathObjects.Contains(collider.gameObject.tag))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                dead = true;
+            }
         }
     }
 
