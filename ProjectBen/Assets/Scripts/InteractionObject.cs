@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class InteractionObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool locked;
+    public int requiredKeys = 1;
+
+
+    public void DoInteraction()
     {
-        
+         gameObject.SetActive(false);  
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }

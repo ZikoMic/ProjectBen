@@ -24,7 +24,7 @@ public class Abilities : MonoBehaviour
         currentPlayer = PlayerPrefs.GetString("CurrentPlayer");
         rb = GameObject.FindGameObjectWithTag(currentPlayer).GetComponent<Rigidbody2D>();
 
-        if (PlayerPrefs.GetInt("Damage Resistance") == 2)
+        if (PlayerPrefs.GetInt("Damage Resistance") == 2  && player.CompareTag("Female"))
         {
             if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
             {
@@ -40,7 +40,7 @@ public class Abilities : MonoBehaviour
             }
         }
 
-        if (PlayerPrefs.GetInt("Increase Speed") == 2)
+        if (PlayerPrefs.GetInt("Increase Speed") == 2 && player.CompareTag("Male"))
         {
             if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
             {
