@@ -243,8 +243,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582769217263653982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.022057533, y: -0.416503, z: -0.578125}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0.116, y: -0.38, z: -0.578125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8582769218270806654}
   m_RootOrder: 0
@@ -322,8 +322,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582769217747681644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3170576, y: -0.416503, z: -0.578125}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0.21299978, y: -0.377, z: -0.578125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8582769218270806654}
   m_RootOrder: 1
@@ -467,12 +467,12 @@ GameObject:
   - component: {fileID: 4640569156114170707}
   - component: {fileID: 2400362983159383934}
   - component: {fileID: 526597477230571870}
-  - component: {fileID: 8972707035560463584}
   - component: {fileID: 7927464729156268651}
   - component: {fileID: 1901203030722260962}
   - component: {fileID: 8005958383105252033}
   - component: {fileID: 7327333818560486392}
-  m_Layer: 0
+  - component: {fileID: 114073513504823612}
+  m_Layer: 11
   m_Name: AnimatedFemale 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -549,22 +549,6 @@ MonoBehaviour:
   controller: {fileID: 7927464729156268651}
   anim: {fileID: 7327333818560486392}
   runSpeed: 50
---- !u!114 &8972707035560463584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8582769218270806641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b776e2887af81841b5fb7f319d43068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shrinkTimeLeft: 3
-  shrinkSpellCooldown: 3
-  invincibleTimeLeft: 3
-  invincibleSpellCooldown: 3
 --- !u!114 &7927464729156268651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +638,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114073513504823612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582769218270806641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b776e2887af81841b5fb7f319d43068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shrinkTimeLeft: 1
+  shrinkSpellCooldown: 3
+  invincibleTimeLeft: 1
+  invincibleSpellCooldown: 3
 --- !u!1 &8582769218378918439
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +680,7 @@ Transform:
   m_GameObject: {fileID: 8582769218378918439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1646605, y: -0.3598247, z: -0.578125}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8582769216875428805}
   - {fileID: 8582769218189468719}

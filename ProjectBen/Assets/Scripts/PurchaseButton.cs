@@ -37,6 +37,7 @@ public class PurchaseButton : MonoBehaviour
     {
         string k = PlayerPrefs.GetString("ToPurchase");
         GameObject item = GameObject.Find("SkillTree/Skill Panel/" + k);
+        GameObject o = GameObject.Find("SkillTree/Skill Panel/" + k);
         item.GetComponent<Button>().interactable = false;
 
 
