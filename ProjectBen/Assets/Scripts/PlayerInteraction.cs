@@ -10,6 +10,15 @@ public class PlayerInteraction : MonoBehaviour
     public int keys = 0;
     private int inElevator = 0;
 
+    private void Update()
+    {
+        if (keys >= currentInterObjScript.requiredKeys)
+        {
+            keys = currentInterObjScript.requiredKeys;
+            currentInterObjScript.locked = false;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Elevator"))
