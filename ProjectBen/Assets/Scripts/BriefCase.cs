@@ -14,6 +14,7 @@ public class BriefCase : MonoBehaviour
 
     public void Update()
     {
-        rgbdy.MovePosition(rgbdy.transform.position += transform.right * direction * speed *Time.deltaTime);
+        rgbdy.MovePosition(rgbdy.transform.position += transform.right * direction * speed *Time.deltaTime
+            );
     }
 }
