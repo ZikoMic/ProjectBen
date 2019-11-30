@@ -16,7 +16,7 @@ public class PlayerBehaviour : MonoBehaviour
     private float distance;
 
     Animator anim;
-    public bool onLadder = false;
+    public bool onLadder;
     private float defaultGravity;
     public static bool alreadySet = false;
     public bool isInvincible = false;
@@ -41,7 +41,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!isInvincible)
         {
-            string[] deathObjects = { "Spikes", "DeathBox" };
+            string[] deathObjects = { "Spikes", "DeathBox", "Robot" , "Briefcase"};
 
             if (deathObjects.Contains(collider.gameObject.tag))
             {
