@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: 54b407b2d8409c645b8e942a7f374e45
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BENBASE_0
+    21300002: BENBASE_1
+    21300004: BENBASE_2
+    21300006: BENBASE_3
+    21300008: BENBASE_4
+    21300010: BENBASE_5
+    21300012: BENBASE_6
+    21300014: BENBASE_7
+    21300016: BENBASE_8
+    21300018: BENBASE_9
+    21300020: BENBASE_10
+    21300022: BENBASE_11
+    21300024: BENBASE_12
+    21300026: BENBASE_13
+    21300028: BENBASE_14
+    21300030: BENBASE_15
+    21300032: BENBASE_16
+    21300034: BENBASE_17
+    21300036: BENBASE_18
+    21300038: BENBASE_19
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BENBASE_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 163
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.21272986}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e54facd4871984d88ad222a78d2047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 174
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.49102655, y: 0.6891399}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf16c1b245e4cb469ce47b4beb17f74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 174
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.53129023, y: 0.9302597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9e4c7c3030ed84fadfd0d4d3ac711a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 175
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.4843528, y: 0.93808264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef71724eeb07ba34e85446a6d1c1c1c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 166
+        width: 17
+        height: 21
+      alignment: 9
+      pivot: {x: 0.51012284, y: 0.2705267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966cd58770fa4aa428e8a7090a0d6156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 146
+        width: 5
+        height: 19
+      alignment: 9
+      pivot: {x: 1.0017822, y: 0.8748458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed1ad2ef93da794b8d7f74b84791f93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 145
+        width: 5
+        height: 20
+      alignment: 9
+      pivot: {x: 0.046777345, y: 0.8439636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd57c48ec2e48640ab2d867aa449631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_7
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 149
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.74313015, y: 0.9446004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6171723f5e17d6845929ab7bc77072ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 149
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.7868398, y: 0.9159177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6258e30747f7944c8c143d2052f8468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 102
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9367ff1f5ed980b458284973eb0677b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 94
+        width: 41
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5098094, y: 0.06334882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40c54b47d5153f47b39d72b33b5b1f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_11
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 102
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae61d2fdc77a42146bd8980a373fca11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 94
+        width: 41
+        height: 35
+      alignment: 9
+      pivot: {x: 0.490191, y: 0.051858086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a5716d0a462734eb0a954e1b211aad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_13
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 102
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5908823d427a8d846a3ab71d2eaecfb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 94
+        width: 41
+        height: 35
+      alignment: 9
+      pivot: {x: 0.49160433, y: 0.032859147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6862ea1d9493d394887fd377f157c1e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_15
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 94
+        width: 37
+        height: 35
+      alignment: 9
+      pivot: {x: 0.513954, y: 0.04761091}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc49b1b81ada82c4295dbddd2123d41c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_16
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 60
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0ef066c99a89e4c8d6c4f4b42abb02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 21
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2abf2a11ca8dae47a88d97c9e147adc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 21
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff21039953c7435478a210d95a18bc1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BENBASE_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 174
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.52691394, y: 0.6926494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55640cf62f73b54f8fef2429d5b103a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 41925b5b83c066c42866aa6e53cc19fa
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,8 @@ TagManager:
   - Spikes
   - DeathBox
   - Ladder
+  - Male
+  - Female
   layers:
   - Default
   - TransparentFX
