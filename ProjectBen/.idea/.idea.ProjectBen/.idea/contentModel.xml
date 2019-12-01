@@ -211,17 +211,23 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
+        <e p="PressureController.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Abilities.cs" t="Include" />
+          <e p="BriefCase.cs" t="Include" />
           <e p="ButtonControllerScript.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterController2D.cs" t="Include" />
           <e p="FemaleMovement.cs" t="Include" />
+          <e p="InteractionObject.cs" t="Include" />
           <e p="LadderZone.cs" t="Include" />
           <e p="MaleMovement.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
+          <e p="NPCBehaviour.cs" t="Include" />
           <e p="OnClick.cs" t="Include" />
           <e p="PingPongMotion.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
+          <e p="PlayerInteraction.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PurchaseButton.cs" t="Include" />
         </e>

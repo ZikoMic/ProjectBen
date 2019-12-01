@@ -24,6 +24,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Start()
     {
+        isInvincible = false;
         anim = gameObject.GetComponent<Animator>();
         if (!PlayerPrefs.HasKey("CurrentPlayer"))
         {
@@ -39,7 +40,9 @@ public class PlayerBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (!isInvincible)
+        Debug.Log("The invincible: " + isInvincible);
+        
+    if (!isInvincible)
         {
             string[] deathObjects = { "Spikes", "DeathBox", "Robot" , "Briefcase"};
 
@@ -81,7 +84,8 @@ public class PlayerBehaviour : MonoBehaviour
 
             if (dead && !isInvincible)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                dead = false;
+                SceneManager.LoadScene(3);
             }
         }
     }

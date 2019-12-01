@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Abilities : MonoBehaviour
 {
@@ -11,58 +12,64 @@ public class Abilities : MonoBehaviour
     private float shrinkSpellStart = 0f;
     [SerializeField] private float shrinkSpellCooldown = 3f;
     [SerializeField] private float invincibleTimeLeft = 1f;
-    private float invincibleSpellStart = 0f;
     [SerializeField] private float invincibleSpellCooldown = 3f;
+    public float invincibleSpellStart = 0f;
     private String currentPlayer;
     private bool isShrink = false;
-    private bool isInvincible = false;
 
-    // Update is called once per frame
-    void Update()
+
+// Update is called once per frame
+    void FixedUpdate()
     {
         player = FindObjectOfType<PlayerBehaviour>();
         currentPlayer = PlayerPrefs.GetString("CurrentPlayer");
         rb = GameObject.FindGameObjectWithTag(currentPlayer).GetComponent<Rigidbody2D>();
 
-      //  if (PlayerPrefs.GetInt("Damage Resistance") == 2)
-       // {
-            if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
+//  if (PlayerPrefs.GetInt("Damage Resistance") == 2)
+// {
+        
+        if (Time.time > shrinkSpellStart + shrinkSpellCooldown)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1) || isShrink)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha1) || isShrink)
-                {
-                    Shrink();
-                }
+                rb.transform.localScale = new Vector3(1f, 1f, 1f);
+                isShrink = true;
+                Shrink();
             }
+        }
 
-            if (!isShrink)
-            {
-                shrinkTimeLeft = 3.0f;
-            }
-     //   }
+        if (!isShrink)
+        {
+            shrinkTimeLeft = 3.0f;
+        }
 
-       
-            if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
+//   }
+        if (Time.time > invincibleSpellStart + invincibleSpellCooldown)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha2) || player.isInvincible)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha2) || isInvincible)
-                {
-                    isInvincible = true;
-                    Invincible();
-                }
+                Debug.Log("Condition");
+                Invincible();
             }
+        }
 
-            if (!isInvincible)
-            {
-                invincibleTimeLeft = 3.0f;
-            }
+        if (!player.isInvincible)
+        {
+            Debug.Log("Not invincible");
+            invincibleTimeLeft = 3.0f;
+        }
+
+        Text text = GameObject.Find("Canvas/Panel/Text").GetComponent<Text>();
+        text.text = "Cooldown: " + invincibleSpellCooldown;
     }
 
     private void Invincible()
     {
         if (invincibleTimeLeft < 0)
         {
-            invincibleSpellStart = Time.time;
-            isInvincible = false;
+            Debug.Log(invincibleTimeLeft);
             player.isInvincible = false;
+            invincibleSpellStart = Time.time;
         }
         else if (invincibleTimeLeft > 0)
         {
@@ -73,9 +80,6 @@ public class Abilities : MonoBehaviour
 
     private void Shrink()
     {
-        rb.transform.localScale = new Vector3(1f, 1f, 1f);
-        isShrink = true;
-
         if ((shrinkTimeLeft < 0) && (rb.transform.localScale == new Vector3(1f, 1f, 1f)))
         {
             isShrink = false;
